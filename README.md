@@ -14,7 +14,7 @@ Time spent: **6** hours spent in total
   - [ ] GIF Walkthrough: https://youtu.be/K7hTDUGLYe8
   - [ ] Steps to recreate: Once you have your script ready, post it as a comment on any post on a WordPress page. Once the comment is posted, either scroll up for the script to be activated, or refresh the page and it will activate. 
   - [ ] Affected source code:
-    - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
+    - [Link 1](https://wpdistillery.vm/wp-admin/includes/theme.php)
 2. WordPress <= 4.9.4 - Application Denial of Service (DoS) (unpatched)
   - [ ] Summary: WordPress contains a feature that lets a browser load multiple JS/CSS files with a single script (uses load-scripts.php)
                  To prevent DoS attacks, WordPress has protected against a user asking for the same module multiple times in a single                      request. However, if you ask it to load ALL the JS modules, it proceeds with the request, with a response that is 4 MB                    data sent in 2.2 seconds. A python script is written to repeat this requst of ALL the modules, and results in a DoS                        causing the server to become unreachable. 
@@ -34,7 +34,7 @@ Time spent: **6** hours spent in total
   - [ ] GIF Walkthrough: https://youtu.be/XSD3R5st3_M
   - [ ] Steps to recreate: You can download any image as a jpg, make the filename ```name<img src=a onclick=alert('string')>.jpg```. Once you have this file downloaded, log onto WordPress as an admin, click "Media" on the left side of the page, and add the picture you made earlier to your library. Click the library again to see your picture uploaded, click on it, click "view attachment page" at the bottom of the page, click the broken image icon, and your XSS will pop up on the screen.  
   - [ ] Affected source code:
-    - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
+    - [Link 1](https://wpdistillery.vm/wp-admin/includes/media.php)
 
 ## Assets
 
